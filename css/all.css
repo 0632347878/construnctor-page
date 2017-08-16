@@ -1,0 +1,341 @@
+* {
+		box-sizing: border-box;
+		} 
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.page-content {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.tabcontent {
+		-webkit-animation: fadeEffect 1s;
+		animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+		from {opacity: 0;}
+		to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+		from {opacity: 0;}
+		to {opacity: 1;}
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+		background-color: #ccc;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+		background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+		display: none;
+	 
+		border-top: none;
+}
+.constructor-main {
+		padding: 6px 15px;
+}
+ button {
+		background-color: transparent;
+		display: block;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transition: 0.3s;
+}
+.constructor {
+	padding: 20px;
+	overflow: hidden;
+	
+}
+.constructor .tab {
+	float: left;
+	width: 25%;
+		overflow: hidden;
+		padding-right: 20px;
+		min-width: 170px;
+}
+.constructor-main {
+	float: left;
+	width: 75%;
+}
+.tablinks {
+	border: 1px #ccc solid;
+		position: relative;
+		padding: 22px 26px 22px 40px;
+		min-width: 120px;
+		margin-bottom: 15px;
+		border-right: transparent;
+}
+.tablinks:after {
+		content: '';
+		height: 0;
+		display: block;
+		border-color: transparent transparent transparent #ccc;
+		border-width: 30px;
+		border-style: solid;
+		position: absolute;
+		top: 0;
+		right: -60px;
+		z-index: 3;
+}
+.tablinks:before {
+		content: '';
+		height: 0;
+		display: block;
+		border-color: transparent transparent transparent #fff;
+		border-width: 29px;
+		border-style: solid;
+		position: absolute;
+		top: 1px;
+		right: -58px;
+		z-index: 5;
+		transition: .3s;
+}
+.tablinks:hover:before,
+.tablinks.active:before {
+		border-color: transparent transparent transparent #ccc;
+		transition: .3s;
+}
+.tabDn-images-w{
+		margin: 0 -15px 20px;
+}
+.tabDn-images-item {
+		width: 25%;
+		float: left;
+		padding: 0 15px;
+		position: relative;  
+}
+.tabDn-images-item > div {
+		position: absolute;
+		top: 0px;
+		z-index: -10;
+		left: 220px;
+		width: 350px;
+		height: 350px;
+}
+.tabDn-images-item1:hover > div,
+.tabDn-images-item2:hover > div,
+.tabDn-images-item3:hover > div,
+.tabDn-images-item4:hover > div {
+		 z-index: 10;
+}
+
+	 
+
+.tabDn-images-item .zoom-show3,
+.tabDn-images-item .zoom-show4 {
+		 left: -365px !important;
+}
+.tabDn-images-item img {
+		width: 100%;
+}
+
+.chose-form-material label,
+.chose-form-left label {
+		font-size: 22px;
+		font-weight: bold;
+		font-family: sans-serif;   
+}
+/* range-slider */
+
+.ui-slider {
+		border: 1px solid #c5c5c5;
+		border-radius: 5px;
+		background: #ffffff;
+		color: #333333;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 1em;
+		height: 1px;
+		position: relative;
+		text-align: left;
+		margin-left: 10px;
+}
+
+.ui-slider .ui-slider-range {
+		position: absolute;
+		z-index: 1;
+		font-size: .7em;
+		display: block;
+		border: 0;
+		background-position: 0 0;
+		background: #e9e9e9;
+		color: #333333;
+				font-weight: bold;
+}
+.ui-slider-horizontal .ui-slider-range {
+		top: 0;
+		height: 1px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default {
+		border: 1px solid #333;
+		background: #ccc;
+		font-weight: normal;
+		color: #454545;
+}
+.ui-slider-horizontal .ui-slider-handle {
+		top: -7px;
+		margin-left: -.6em;
+}
+.ui-slider .ui-slider-handle {
+		position: absolute;
+		z-index: 2;
+		width: .8em;
+		height: .8em;
+		cursor: default;
+		-ms-touch-action: none;
+		touch-action: none;
+		outline: none;
+		border-radius: 50%;
+}
+.slider-rangeDn1,
+.slider-rangeDn2,
+.slider-rangeDn3,
+.slider-rangeDn4 {
+		margin-bottom: 15px;
+}
+.slider-rangeDn1 p,
+.slider-rangeDn2 p,
+.slider-rangeDn3 p,
+.slider-rangeDn4 p {
+		margin-top: 0;
+}
+/* end range-slider */
+.chose-form-material {
+		margin-bottom: 20px;
+		max-width: 200px;
+		padding: 10px 0;
+		background: #ffccff;
+		border: 1px #ccc solid;
+}
+.chose-form {
+		margin: 0 -15px;
+}
+.chose-form-left {
+		float: left;
+		width: 40%;
+		padding: 0 15px;
+}
+.chose-form-right {
+		float: right;
+		width: 50%;
+		padding: 0 15px;
+}
+.chose-form-right .fields-group > *:not(label) {
+		width: 100%;
+		margin-bottom: 20px;
+		padding-left: 10px;
+}
+.chose-form-right .fields-group label {
+		color: #333;
+		opacity: .7;
+}
+.chose-form-right  textarea {
+		height: 200px;
+		padding: 15px; 
+		margin-bottom: 15px;
+				outline: none;
+
+}
+.chose-form-right [type="submit"] {
+		min-height: 40px;
+		line-height: 40px;
+		max-width: 200px;
+		margin-left: auto;
+		display: block;
+		cursor: pointer;
+}
+.disabled-range {
+		pointer-events: none;
+		opacity: .4;
+}
+.chose-form-right .fields-group {
+		position: relative;
+}
+.chose-form-right input {
+		min-height: 32px;
+		outline: none;
+}
+.fields-group label.error {
+		position: absolute;
+		right: 5px;
+		top: 50%;
+		display: inline-block;
+		transform: translateY(-100%);
+		color: red;
+}
+input.error,
+textarea.error {
+		border: 1px solid red;
+}
+
+
+/* --- MEDIA ---*/
+@media all and (max-width: 1200px) {
+		.tabDn-images-item {
+			width: 50%;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.tabDn-images-item img {   
+		 max-width: 300px;
+		}
+		.chose-form-left {
+			width: 50%;
+		}
+} 
+@media all and (max-width: 768px) {
+		.constructor-main, .constructor .tab {
+			width: 100%;
+			float: none;
+		}
+		.constructor {
+			padding: 20px 15px;
+		}
+		.constructor .tab {
+			padding-right: 0;
+			margin-bottom: 20px;
+		}
+		.constructor .tab button {
+			float: left;
+		}
+}
+@media all and (max-width: 640px) {
+	.chose-form-left,
+	.chose-form-right {
+		width: 100%;
+		float: none;
+	}
+	.chose-form-left {
+		margin-bottom: 40px;
+	}
+	.constructor-main .tabcontent {
+		margin: 0 -15px;
+	}    
+}
+@media all and (max-width: 680px) {
+	.constructor .tab .tablinks {
+		float: left;
+		width: 40%;
+	}
+}
+@media all and (max-width: 480px) {
+	.tabDn-images-item {
+		width: 100%;
+		float: none;
+	}
+	.tab {
+		margin-bottom: 25px;
+	}
+}

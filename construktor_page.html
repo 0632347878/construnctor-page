@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>woonderbag</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <div class="page-content">
+
+        <div class="constructor">
+            <div class="tab">
+                <button class="tablinks constructorDn" onclick="openCity(event, 'krokodil')">krokodil</button>
+                <button class="tablinks" onclick="openCity(event, 'Aligator')">Aligator</button>
+                <button class="tablinks" onclick="openCity(event, 'Python')">Python</button>
+                <button class="tablinks" onclick="openCity(event, 'Iashiritsa')">Iashiritsa</button>
+                <button class="tablinks" onclick="openCity(event, 'straus')">straus</button>
+            </div>
+            <div class="constructor-main">
+                <div id="krokodil" class="tabcontent">
+                		<div class="tabDn-images-w  clearfix">
+                		    <div class="tabDn-images-item tabDn-images-item1">
+                		        <img class="zoom__img" data-zoom="img/placeholder-big.jpg" src="img/placeholder.png" alt="Coyote" data-zoom="">
+                		        <div class="zoom-show">
+                		            
+                		        </div>
+                		    </div>
+                		    <div class="tabDn-images-item tabDn-images-item2">
+                		        <img class="zoom__img2" data-zoom="img/placeholder-big.jpg" src="img/placeholder.png" alt="Coyote" data-zoom="">
+                		        <div class="zoom-show2">
+                		            
+                		        </div>
+                		    </div>
+                		    <div class="tabDn-images-item tabDn-images-item3">
+                		        <img class="zoom__img3" data-zoom="img/placeholder-big.jpg" src="img/placeholder.png" alt="Coyote" data-zoom="">
+                		        <div class="zoom-show3">
+                		            
+                		        </div>
+                		    </div>
+                		    <div class="tabDn-images-item tabDn-images-item4">
+                		        <img class="zoom__img4" data-zoom="img/placeholder-big.jpg" src="img/placeholder.png" alt="Coyote" data-zoom="">
+                		        <div class="zoom-show4">
+                		            
+                		        </div>
+                		    </div>
+                		</div>
+
+                    <form action="" id="componentForm" class="chose-form clearfix">
+                        <div class="chose-form-left">
+                            <div class="chose-form-material">
+                                <input type="checkbox" id="material1">
+                                <label for="material1">Gold</label>
+                                <br/>
+                                <input type="checkbox" id="material2">
+                                <label for="material2">platin</label>
+                            </div>
+                            <!-- first range -->
+                            <input type="checkbox" id="slider1-1">
+                            <label for="slider1-1">Saphirs</label>
+                            <div class="slider-rangeDn1 disabled-range">
+                                <p>
+                                    <label for="amount">
+                                        <!-- Price range: -->
+                                    </label>
+                                    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                </p>
+                                <div id="slider-range"></div>
+                            </div>
+                            <!-- second range -->
+                            <input type="checkbox" id="slider1-2">
+                            <label for="slider1-2">Rubis</label>
+                            <div class="slider-rangeDn2 disabled-range">
+                                <p>
+                                    <label for="amount2">
+                                        <!-- Price range: -->
+                                    </label>
+                                    <input type="text" id="amount2" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                </p>
+                                <div id="slider-range2"></div>
+                            </div>
+                            <!-- second end -->
+                            <!-- third range -->
+                            <input type="checkbox" id="slider1-3">
+                            <label for="slider1-3">Saphirs</label>
+                            <div class="slider-rangeDn3 disabled-range">
+                                <p>
+                                    <label for="amount3">
+                                        <!-- Price range: -->
+                                    </label>
+                                    <input type="text" id="amount3" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                </p>
+                                <div id="slider-range3"></div>
+                            </div>
+                            <!-- third range -->
+                            <input type="checkbox" id="slider1-4">
+                            <label for="slider1-4">Emeraudes</label>
+                            <div class="slider-rangeDn4 disabled-range">
+                                <p>
+                                    <label for="amount4">
+                                        <!-- Price range: -->
+                                    </label>
+                                    <input type="text" id="amount4" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                </p>
+                                <div id="slider-range4"></div>
+                            </div>
+                            <!-- third end -->
+                        </div>
+                        <div class="chose-form-right">
+                            <div class="fields-group">
+                                <input type="text" name="name" placeholder="name" id="cname" minlength="2" required>
+                            </div>
+                            <div class="fields-group">
+                                <input type="text" name="phone" placeholder="phone" required>
+                            </div>
+                            <div class="fields-group">
+                                <input type="email" name="email" placeholder="email" id="cemail" required>
+                            </div>
+                            <div class="fields-group">
+                                <textarea minlength="10" required></textarea>
+                            </div>
+                            <input type="submit" value="Send request">
+                        </div>
+                    </form>
+                </div>
+                <div id="Aligator" class="tabcontent">
+                    <h3>Aligator</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+                <div id="Python" class="tabcontent">
+                    <h3>Python</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+                <div id="Iashiritsa" class="tabcontent">
+                    <h3>Aligator</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+                <div id="straus" class="tabcontent">
+                    <h3>Python</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <script src="js/Drift.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $("	#componentForm").validate();
+    </script>
+    <script>
+
+
+    </script>
+</body>
+
+</html>
